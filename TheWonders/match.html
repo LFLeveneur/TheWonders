@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Matching</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="preset.css">
+        <link rel="stylesheet" type="text/css" href="match.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+    <body>
+        <!--Footer-->
+        <div id="footer"></div>
+        <script>$("#footer").load("footer.html");</script>
+
+        <!--Navbar-->
+        <div id="navbar"></div>
+        <script>$("#navbar").load("navbar.html");</script>
+
+        <!--Content-->
+        <p class="title h1">MATCH AVEC ...</p>
+        <div class="matching">
+            <img id="button_1" src="Assets/Match/wonders.svg">
+            <img id="button_2" src="Assets/Match/mentor.svg">
+        </div>
+        <div id="blur_popup" class="b_black"></div>
+        <div id="popup_1" class="b_green c_white">
+            <div class="top">
+                <div>
+                    <p class="h4 center">Tu viens de match avec</p>
+                    <p class="h3 center">Justine Latour</p>
+                </div>
+            </div>
+            <div class="bot">
+                <p class="h5 center">Tu as obtenu un défi WONDER en duo</p>
+                <div class="buttons">
+                    <button class="h4 b_black c_white" onclick="location.href='community.html';">
+                        Voir son profil
+                    </button>
+                    <button class="h4 b_pink c_white" onclick="location.href='defi.html';">
+                        Faire le défi
+                    </button>
+                </div>
+            </div>
+            <img class="close_1" src="Assets/Popup/close.svg">
+        </div>
+        <div id="popup_2" class="b_pink c_white">
+            <div>
+                <p class="h3 title center">Tu viens de match avec une MENTOR !</p>
+            </div>
+            <button class="h4 b_red c_white" onclick="location.href='conversation.html';">
+                Discuter
+            </button>
+            <img class="close_2" src="Assets/Popup/close.svg">
+        </div>
+
+        <!-- Script -->
+        <script src="js/popup_double.js"></script>
+    </body>
+</html>

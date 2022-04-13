@@ -1,0 +1,114 @@
+body {
+    background: #EEDFB7;
+    background-image: url(Assets/Subscription/background.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+    padding-bottom: 0px !important;
+}
+
+#form {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: -2;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#close {
+    position: absolute;
+    top: 24px;
+    left: 32px;
+    background: none;
+}
+
+#title {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.content_sub {
+    margin: 0px 32px 32px 32px;
+}
+
+/* Marche pas Xd */
+.abonne_toi{
+    font-weight: 700 !important;
+}
+
+.avis {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.avis:nth-child(1) {
+    margin-left: 8px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+}
+
+.liste_abonnement {
+    margin-top: 16px;
+}
+
+.liste_abonnement li {
+    display: flex;
+    flex-direction: row;
+}
+
+.liste_abonnement svg {
+    margin-left: 8px;
+}
+
+.liste_abonnement > * {
+    margin-top: 8px;
+}
+
+.formule {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small {
+    width: 80px;
+    height: 120px;
+}
+
+.small div {
+    padding-top: 20px;
+}
+
+.big {
+    width: 115px;
+    height: 144px;
+    padding: 10px 0px;
+}
+
+.big div {
+    padding-top: 10px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+a:visited {
+    color: white;
+}

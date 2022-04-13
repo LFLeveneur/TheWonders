@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Défi</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="preset.css">
+        <link rel="stylesheet" type="text/css" href="defi.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+    <body>
+        <!--Footer-->
+        <div id="footer"></div>
+        <script>$("#footer").load("footer.html");</script>
+
+        <!--Navbar-->
+        <div id="navbar"></div>
+        <script>$("#navbar").load("navbar.html");</script>
+
+        <!--Content-->
+        <img id="background" src="Assets/Defi/background.svg">
+        <div class="container">
+            <div class="defi b_yellow c_white" id="daily">
+                <p class="h3">DÉFI QUOTIDIEN</p>
+                <p class="h5 desc">
+                    Va dire bonjour à un ou une inconnu(e) dans la rue !
+                </p>
+                <p class="c_purple h5">
+                    7% des wonders ont déjà réussi le défi
+                </p>
+                <div class="time_left">
+                    <p class="bold h5">
+                        Temps restant : 22h 19min
+                    </p>
+                    <img src="Assets/Defi/chrono.svg">
+                </div>
+                <button id="button_1" class="h4 b_green c_white button bold">
+                    Valider mon défi
+                </button>
+            </div>
+            <div class="defi b_red c_white" id="weekly">
+                <p class="h3">DÉFI HEBDO</p>
+                <p class="h3">
+                    Kickstarter
+                </p>
+                <p class="c_blue h5">
+                    15% des wonders ont déjà réussi le défi
+                </p>
+                <div class="time_left">
+                    <p class="bold h5">
+                        Temps restant :  3j 22h 19min
+                    </p>
+                    <img src="Assets/Defi/chrono.svg">
+                </div>
+                <button class="h4 b_blue c_white button bold" onclick="location.href='defi_hebdo.html';">
+                    Voir le défi
+                </button>
+            </div>
+            <div class="defi b_purple c_white" id="duo">
+                <p class="h3">DÉFI DUO</p>
+                <p class="h3">
+                    Découverte
+                </p>
+                <p class="c_yellow h5">
+                    33% des wonders ont déjà réussi le défi
+                </p>
+                <div class="time_left">
+                    <p class="bold h5">
+                        Temps restant :  3j 22h 19min
+                    </p>
+                    <img src="Assets/Defi/chrono.svg">
+                </div>
+                <button id="button_2" class="h4 b_yellow c_white button bold">
+                    Commencer
+                </button>
+            </div>
+            <button class="h4 b_brown c_white button bold" onclick="location.href='suggest.html';">
+                Propose un défi
+            </button>
+        </div>
+        <div id="blur_popup" class="b_black"></div>
+        <div id="popup_1" class="b_red c_white">
+            <div>
+                <p class="h4 center title">7 nouveaux défis quotidiens à débloquer</p>
+                <p class="right h5">1 défi hebdomadaire</p>
+                <p class="right h5">Sauvegarde tes<br>points d’audace</p>
+            </div>
+            <button class="h4 b_black c_white" onclick="location.href='register.html';">
+                Inscrivez-vous
+            </button>
+            <img class="close_1" src="Assets/Popup/close.svg">
+        </div>
+        <div id="popup_2" class="b_purple c_white">
+            <div>
+                <p class="h4 center title">Félicitation tu as dépassé les 50 points d’audace</p>
+                <p class="right h5">Crée des défis</p>
+                <p class="right h5">Note les idées<br>de défis</p>
+            </div>
+            <button class="h4 b_yellow c_white blacker_extra" onclick="location.href='rewards.html';">
+                LES DÉFIS
+            </button>
+            <img class="close_2" src="Assets/Popup/close.svg">
+        </div>
+
+        <!-- Script -->
+        <script src="js/popup_double.js"></script>
+    </body>
+</html>

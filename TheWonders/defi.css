@@ -1,0 +1,220 @@
+#background {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.defi {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.defi > * {
+    margin-left: 8px;
+}
+
+.defi p:not(.bold) {
+    width: 47.2vw;
+}
+
+.defi :nth-child(1).h3{
+    margin-top: 8px;
+}
+
+.defi :nth-child(2).h3{
+    margin-top: 4px;
+}
+
+.desc  {
+    font-size: 18px;
+    margin-top: 4px;
+    width: 175px;
+}
+
+.defi :nth-child(3) {
+    margin-top: 8px;
+}
+
+.defi :nth-child(4) {
+    margin-top: 4px;
+}
+
+.defi :nth-child(5) {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.time_left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.time_left img {
+    margin-left: 4px
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.button {
+    font-size: 16px;
+    padding: 4px 40px 4px 8px;
+    background-image: url(Assets/Defi/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 90%;
+}
+
+#daily {
+    background-image: url(Assets/Defi/daily.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#weekly {
+    background-image: url(Assets/Defi/weekly.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#duo {
+    background-image: url(Assets/Defi/duo.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.container button.b_brown {
+    margin-bottom: 16px;
+    background-position-x: 65%;
+}
+
+/* POPUP */
+
+#blur_popup {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.7;
+    backdrop-filter: blur(10px);
+}
+
+#blur_popup.active {
+    visibility: visible;
+}
+
+#popup_1 {
+    visibility: hidden;
+    position: fixed;
+    margin: auto;
+    margin-top: 50vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    height: 100vh;
+    width: 310px;
+    height: 310px;
+    background-image: url(Assets/Popup/register.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+#popup_1.active {
+    visibility: visible;
+}
+
+#popup_1 > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#popup_1 .title {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+#popup_1 .right {
+    text-align: right;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+#popup_1 button {
+    position: absolute;
+    padding: 10px 5px;
+    bottom: 8px;
+    right: 8px;
+}
+
+#popup_1 img {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+#popup_2 {
+    visibility: hidden;
+    position: fixed;
+    margin: auto;
+    margin-top: 50vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    height: 100vh;
+    width: 310px;
+    height: 310px;
+    background-image: url(Assets/Popup/audace.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+#popup_2.active {
+    visibility: visible;
+}
+
+#popup_2 > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#popup_2 .title {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+#popup_2 .right {
+    text-align: right;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+#popup_2 button {
+    position: absolute;
+    padding: 10px 5px;
+    bottom: 8px;
+    right: 8px;
+}
+
+#popup_2 img {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}

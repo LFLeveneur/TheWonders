@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Badge</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="preset.css">
+        <link rel="stylesheet" type="text/css" href="badge_1.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+    <body>
+        <!--Footer-->
+        <div id="footer"></div>
+        <script>$("#footer").load("footer.html");</script>
+
+        <!--Navbar-->
+        <div id="navbar"></div>
+        <script>$("#navbar").load("navbar.html");</script>
+
+        <!--Content-->
+        <div class="container">
+            <div class="up">
+                <img src="Assets/Badge/badge_wommen.svg" alt="">
+                <div class="text_badge">
+                    <p class="h1 c_white">Rejoins la Squad</p>
+                    <p class="h4 c_white">Félicitation, tu as rejoint ta première squad. Tu peux désormais discuter et réaliser des défis avec les membres de ta squad</p>
+                </div>
+            </div>
+            <div class="down">
+                <div class="progress_barre b_green">
+                    <p class="h5 c_white">100%</p>
+                </div>
+                <p class="h4 c_white">Tu as complété ce défi avec succès</p>
+            </div>
+        </div>
+    </body>
+</html>

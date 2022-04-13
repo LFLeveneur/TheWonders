@@ -1,0 +1,150 @@
+body {
+    background-image: url(Assets/Match/background.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+}
+
+.title {
+    margin: 16px 0px 0px 16px;
+    margin-bottom: 40px;
+}
+
+.matching {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.matching img {
+    width: 100%;
+    margin-bottom: 56px;
+    cursor: pointer
+}
+
+/* POPUP */
+#blur_popup {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.7;
+    backdrop-filter: blur(10px);
+}
+
+#blur_popup.active {
+    visibility: visible;
+}
+
+#popup_1 {
+    visibility: hidden;
+    position: fixed;
+    margin: auto;
+    margin-top: 50vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    height: 100vh;
+    width: 310px;
+    height: 310px;
+    background-image: url(Assets/Popup/wonder.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#popup_1.active {
+    visibility: visible;
+}
+
+#popup_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#popup_1 .top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+#popup_1 button {
+    padding: 10px 10px;
+}
+
+#popup_1 img {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+#popup_1 .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+#popup_1 .bot {
+    display: flex;
+    flex-direction: column;
+}
+
+#popup_1 .bot > p {
+    margin-bottom: 8px;
+}
+
+#popup_2 {
+    visibility: hidden;
+    position: fixed;
+    margin: auto;
+    margin-top: 50vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    height: 100vh;
+    width: 310px;
+    height: 310px;
+    background-image: url(Assets/Popup/mentor.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#popup_2.active {
+    visibility: visible;
+}
+
+#popup_2 > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#popup_2 > div > * {
+    margin-left: 8px;
+    margin-top: 16px;
+}
+
+#popup_2 .title {
+    width: 300px;
+    font-weight: 400;
+}
+
+#popup_2 button {
+    position: absolute;
+    padding: 10px 10px;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#popup_2 img {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}

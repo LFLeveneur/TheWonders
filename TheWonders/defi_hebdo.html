@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Défi Hebdomadaire</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="preset.css">
+        <link rel="stylesheet" type="text/css" href="defi_hebdo.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+    <body>
+        <!--Footer-->
+        <div id="footer"></div>
+        <script>$("#footer").load("footer.html");</script>
+
+        <!--Navbar-->
+        <nav>
+            <div id="flex_nav">
+                <img src="Assets/Navbar/back.svg" onclick="history.back()">
+                <p class="h3 bold c_white blacker_extra">Défi hebdo</p>
+                <div></div>
+            </div>
+        </nav>
+
+        <!--Content-->
+        <div class="container">
+            <div class="post b_red">
+                <div class="post_text">
+                    <p class="h3 c_white">Kickstarter</p>
+                    <p class="h5 c_white">Lancer un kickstarter avec un objectif de 300 € sur le sujet de votre choix</p>
+                    <p class="h5 c_blue">7% des wonders ont déjà réussi le défi</p>
+                    <div class="post_time">
+                        <p class="h6 c_white">Temps restant : 22h 19min</p>
+                        <img src="/Assets/Defi/restore.svg" alt="">
+                    </div>
+                    <p class="h5 c_white b_blue post_resultat popup_button" style="font-weight: 700;">Poste ton résultat</p>
+                </div>
+                <img src="/Assets/Defi/fatou.svg" alt="">
+            </div>
+            <div class="commentaire">
+                <img src="/Assets/Defi/photo_1.svg" alt="">
+                <div class="commentaire_text">
+                    <div class="name_date">
+                        <p class="h5">Amina Buladi</p>
+                        <p class="h5">publié le 10 juin</p>
+                    </div>
+                    <p class="h5">Petite danse de la victoire pour notre team DAR(L)INGs qui a dépassé les 300 € ce matin... Voici le résultat :D
+                    </br>Lien vers la cagnotte : </br><a href="https://www.okpal.com/defi-the-wonders-week-end-troc-du-03-juillet/">https://www.okpal.com/defi-the-wonders-week-end-troc-du-03-juillet/</a></p>
+                    <img class="captur_commentaire" src="/Assets/Defi/captur_ecran_1.svg" alt="">
+                    <p class="h5 buttom_valider_1 c_white">Valider le défi hebdomadaire</p>
+                    <div class="commentaire_info">
+                        <img src="/Assets/Defi/icon_commentaire.svg" alt="">
+                        <p class="h6">12</p>
+                        <img src="/Assets/Defi/icon_partager.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="commentaire">
+                <img src="/Assets/Defi/photo_2.svg" alt="">
+                <div class="commentaire_text">
+                    <div class="name_date">
+                        <p class="h5">Adèle Jégo</p>
+                        <p class="h5">publié le 11 juin</p>
+                    </div>
+                    <p class="h5">C’est un succès pour notre team N.E.R.J en dépassant les 300 €, la preuve du défi est ci-dessous
+                    </br>Lien vers la cagnotte : </br><a href="https://lydia-app.com/collect/28783-week-end-troc-ramassage-de-dechets-wonders/fr">https://lydia-app.com/collect/28783-week-end-troc-ramassage-de-dechets-wonders/fr</a></p>
+                    <img class="captur_commentaire" src="/Assets/Defi/captur_ecran_2.svg" alt="">
+                    <p class="h5 buttom_valider_2 c_white">Valider le défi hebdomadaire</p>
+                    <div class="commentaire_info">
+                        <img src="/Assets/Defi/icon_commentaire.svg" alt="">
+                        <p class="h6">12</p>
+                        <img src="/Assets/Defi/icon_partager.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="blur_popup" class="b_black"></div>
+            <div id="popup" class="b_yellow c_white">
+                <div>
+                    <p class="h3 title">BRAVO! mais ...</p>
+                    <p class="h5">Afin de valider ton défi hébdomadaire </p>
+                    <div class="right">
+                        <p class="h4">Tu dois en<br>premier temps<br>t’abonner à<br>THE WONDERS</p>
+                    </div>
+                </div>
+                <button class="h4 b_black c_white" onclick="location.href='subscription.html';">
+                    Abonnement
+                </button>
+                <img class="close" src="Assets/Popup/close.svg">
+            </div>
+        </div>
+        <script src="js/popup.js"></script>
+    </body>
+</html>
